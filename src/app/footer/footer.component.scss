@@ -1,0 +1,99 @@
+.contenedor{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+
+}
+
+// .texto1{
+//   display: flex;
+//   font-family: fangsong;
+//   font-size: 20px;
+//   justify-content: space-around;
+//   width: 100%;
+//   margin: 1%;
+// }
+
+// .texto2{
+//   display: flex;
+//   font-family: cursive;
+//   font-size: 20px;
+//   justify-content: space-around;
+//   width: 100%;
+//   flex-direction: row;
+//   margin: 1%;
+// }
+
+// .contenedor1{
+//   display: flex;
+//   justify-content: start;
+//   width: 100%;
+//   background-color: rgb(248, 240, 223);
+//   flex-wrap: wrap;
+// }
+
+
+
+.redes{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 34px;
+  background-color: rgb(248, 240, 223);
+}
+.contenedor2{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 50px;
+  background-color: rgb(157, 157, 157);
+}
+
+.estilo{
+  margin: 1%;
+}
+
+.estilo2{
+  margin: 1%;
+}
+
+.estilo3{
+  margin: 1%;
+}
+
+.contenedor3{
+  display: flex;
+  align-content: center;
+  width: 100%;
+  height: 80px;
+  background-color: rgb(157, 157, 157);
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.img-instragram{
+  width: 27px;
+  height: 72%;
+
+}
+.img-Tikto{
+  width: 27px;
+  height: 72%;
+  margin-left: 1%;
+}
+
+.img-facebook{
+  width: 27px;
+  height: 72%;
+    margin-left: 1%;
+}
+
+.img-youtube{
+  width: 27px;
+  height: 72%;
+  margin-left: 1%;
+}
+
+
