@@ -3,3 +3,11 @@ body{
   background:rgb(254, 251, 243);/* fallback for old browsers */
   margin: 0%;
 }
+
+.main{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
