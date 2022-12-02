@@ -1,22 +1,28 @@
 <div>
-    <mat-toolbar class="contenedor">
+  <mat-toolbar class="contenedor">
     <div class="contenedor2">
-        <fa-icon class="icono" [icon]="tienda"></fa-icon>
+      <a href="#" class="home-link">
+        <i class="fa-solid fa-store icono"></i>
         <h1 class="titulos1">Store</h1>
+      </a>
     </div>
 
-    <div class="contenedor3">
-      <!-- <span class="titulos2">HOME</span>
-      <span class="titulos3">ABOUT US</span>
-      <span class="titulos4">SHOP</span>
-      <span class="titulos5">CONTACT</span> -->
-      <fa-icon class="usuario" [icon]="usuario"></fa-icon>
-      <fa-icon class="carrito" [icon]="carrito"></fa-icon>
-      <!-- <fa-icon class="carrito" [icon]="barra"></fa-icon> -->
-      <span class="example-spacer"></span>
-
-    </div>
-
+    <ul class="contenedor3">
+      <li class="links">
+        <a href="#" class="titulos3">SHOP</a>  
+      </li>
+      <li class="links">
+        <a href="#" class="titulos3">ABOUT US</a>  
+      </li>
+      <li class="links">
+        <a href="#" class="titulos3">
+          <i class="fa-solid fa-user usuario"></i>
+        </a>
+      </li>
+      <li class="links">
+        <i class="fa-solid fa-cart-shopping carrito"></i>
+      </li>
+    </ul>
   </mat-toolbar>
 
 </div>
