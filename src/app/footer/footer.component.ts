@@ -20,5 +20,4 @@ export class FooterComponent {
     this.tikTok = '../../../assets/img/tik-tok.png';
     this.youtube = '../../../assets/img/youtube.png';
   }
-
 }
