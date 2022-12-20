@@ -10,6 +10,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
 import { FooterComponent } from './footer/footer.component';
+import { ComponentsModule } from './components/components.module';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { FooterComponent } from './footer/footer.component';
     AppRoutingModule,
     MatToolbarModule,
     MatIconModule,
-    MatMenuModule
+    MatMenuModule,
+    ComponentsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
