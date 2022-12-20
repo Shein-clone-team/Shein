@@ -9,25 +9,25 @@ import { ISlide } from '../interfaces/ISlide';
 export class ImageSliderComponent {
   @Input() slides: ISlide[] = [];
 
-  currentIndex: number = 0;
+  indexActual: number = 0;
   
-  get getCurrentUrl():string {
-    return this.slides[this.currentIndex].url;
+  get obtenerUrlActual():string {
+    return this.slides[this.indexActual].url;
   } 
 
   siguiente() {
-    let isLast = this.currentIndex === (this.slides.length-1);
-    let newIndex = isLast ? 0: this.currentIndex+1;
-    this.currentIndex = newIndex;
+    let isLast = this.indexActual === (this.slides.length-1);
+    let newIndex = isLast ? 0: this.indexActual+1;
+    this.indexActual = newIndex;
   }
 
   anterior() {
-    let isFirst = this.currentIndex === 0;
-    let newIndex = isFirst ? this.slides.length-1: this.currentIndex-1;
-    this.currentIndex = newIndex;
+    let isFirst = this.indexActual === 0;
+    let newIndex = isFirst ? this.slides.length-1: this.indexActual-1;
+    this.indexActual = newIndex;
   }
 
   seleccionarSlide(slideIndex: number) {
-    this.currentIndex = slideIndex;
+    this.indexActual = slideIndex;
   }
 }
