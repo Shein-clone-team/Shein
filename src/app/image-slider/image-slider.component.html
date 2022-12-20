@@ -1,0 +1,23 @@
+<div class="slider-contenedor">
+    <div class="slide-contenedor">
+        <!-- Flecha izquierda -->
+        <div class="flechaIzquierda" (click)="anterior()">
+            <i class="fa-solid fa-angles-left"></i>
+        </div>
+        <img [src]="getCurrentUrl" class="slide" alt="">
+        <div class="flechaDerecha" (click)="siguiente()">
+            <i class="fa-solid fa-angles-right"></i>
+        </div>
+    </div>
+    <div class="dotsContainer">
+        <div *ngFor="let slide of slides; let slideIndex = index" class="dot"
+            (click)="seleccionarSlide(slideIndex)"
+            [ngClass]="{
+                'blue': slideIndex === 0, 
+                'black': slideIndex === 1, 
+                'pink': slideIndex === 2, 
+                'selected-dot': currentIndex === slideIndex
+            }">
+        </div>
+    </div>
+</div>

@@ -1,0 +1,62 @@
+.home-contenedor {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0eee7;
+    border-radius: 25px 25px 0px 0px;
+    margin-top: 10px;
+    padding-bottom: 30px;
+    overflow: hidden;
+    
+    .contenedor-contenido {
+        width: 100%;
+        padding: 25px 0px 0px 0px; 
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        // font-family: 'Montserrat', sans-serif;
+
+        .outfit-titulo {
+            color: #9D9D9D;
+            font-size: 16px;
+            font-family: 'Montserrat', sans-serif;
+            margin-bottom: 2px;
+        }
+
+        .estilos-titulo {
+            font-size: 12px;
+            font-weight: 500;
+        }
+
+        .estilos-titulo-ultimo {
+            font-size: 14px;
+            padding: 0;
+        }
+    }
+
+    .carrucel {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        // background-color: black;
+
+        .jacket {
+            // background-color: red;
+            width: 90%;
+            height: 85%;
+            margin-left: 23px;
+        }
+    }
+}
+
+@media screen and (min-width: 800px) {
+
+}

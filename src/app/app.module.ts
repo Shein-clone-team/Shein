@@ -10,7 +10,9 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
 import { FooterComponent } from './footer/footer.component';
+import { HomeComponent } from './pages/home/home.component';
 import { ComponentsModule } from './components/components.module';
+import { ImageSliderComponent } from './image-slider/image-slider.component';
 
 
 @NgModule({
@@ -18,7 +20,8 @@ import { ComponentsModule } from './components/components.module';
     AppComponent,
     NavComponent,
     FooterComponent,
-
+    HomeComponent,
+    ImageSliderComponent
   ],
   imports: [
     BrowserModule,
