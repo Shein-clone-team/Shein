@@ -1,0 +1,176 @@
+.deslizador-contenedor {
+    position: relative;
+    height: 370px;
+    
+    .slide-contenedor {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        position: relative;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        color: #c0d9df;
+        
+        .s-img {
+            width: 310px;
+            height: 100%;
+            border-radius: 10px;
+            margin-left: 6px;
+            margin-bottom: -10px;
+            background-size: cover;
+            background-position: center;
+        }
+    
+        .flechaDerecha {
+            font-size: 43px;
+            position: absolute;
+            right: -10px;
+            top: 44%;
+        }
+        .flechaIzquierda {
+            font-size: 43px;
+            position: absolute;
+            top: 44%;
+            left: -10px;
+            // top: 60%
+        }
+    }
+
+    .puntos-Contenedor {
+        // background-color: red;
+        display: flex;
+        justify-content: center;
+        
+        .punto {
+            margin: 0 28px;
+            cursor: pointer;
+            width: 24px;
+            height: 10px;
+            border:solid 2px white;
+            border-radius: 10px;
+            background-color: black;
+            font-size: 20px;
+        }
+        
+        .punto-seleccionado {
+            width: 24px;
+            height: 10px;
+            border: 2px #96a4a4 solid;
+        }
+        
+        .azul {
+            background-color: #80C7D9;
+        }
+        
+        .negro {
+            background-color: black;
+        }
+        
+        .rosado {
+            background-color: #EFAFBC;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .deslizador-contenedor {
+        height: 450px;
+        // background-color: red;
+        
+        .slide-contenedor {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 100%;
+            position: relative;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            color: #c0d9df;
+            
+            .s-img {
+                width: 390px;
+            }
+        
+            .flechaDerecha {
+                font-size: 47px;
+                position: absolute;
+                right: -10px;
+                top: 44%;
+            }
+            .flechaIzquierda {
+                font-size: 47px;
+                position: absolute;
+                top: 44%;
+                left: -10px;
+                // top: 60%
+            }
+        }
+    
+        .puntos-Contenedor {
+            // background-color: red;
+            display: flex;
+            justify-content: center;
+            
+            .punto {
+                margin: 0 28px;
+                cursor: pointer;
+                width: 28px;
+                height: 12px;
+                border:solid 2px white;
+                border-radius: 10px;
+                background-color: black;
+                font-size: 20px;
+            }
+            
+            .punto-seleccionado {
+                width: 28px;
+                height: 12px;
+                border: 3px #96a4a4 solid;
+            }
+            
+            .azul {
+                background-color: #80C7D9;
+            }
+            
+            .negro {
+                background-color: black;
+            }
+            
+            .rosado {
+                background-color: #EFAFBC;
+            }
+        }
+    }    
+}
+
+@media (min-width: 1024px) {
+    .deslizador-contenedor {
+        .slide-contenedor {
+            .s-img {
+                width: 410px;
+            }
+
+            .flechaDerecha {
+                font-size: 53px;
+                top: 45%;
+            }
+            .flechaIzquierda {
+                font-size: 53px;
+                top: 45%;
+                // top: 60%
+            }
+        }
+    }
+}
+@media (min-width: 1280px) {
+    .deslizador-contenedor {
+        margin-bottom: 50px;
+        margin-right: 20px;
+        .slide-contenedor {
+            .s-img {
+                width: 450px;
+            }
+        }
+    }
+}

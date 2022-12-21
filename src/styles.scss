@@ -3,17 +3,33 @@
 @tailwind utilities;
 
 
-/* You can add global styles to this file, and also import other style files */
-body{
-  background:rgb(254, 251, 243);/* fallback for old browsers */
-  margin: 0%;
-  font-family: 'Montserrat', sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+  position:relative; 
+  min-height: 100%;
+  padding: 0;
+  margin: 0;
 }
 
-.main{
-  min-height: 100vh;
+body {
+  background:rgb(255, 255, 255);
+  padding: 0;
+  margin: 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
 }
+ 
+app-root {
+  order: 0;
+  flex: 1 1 auto;
+  align-self: auto;
+  display: block;
+  padding-bottom: 150px;
+}
+ 
 

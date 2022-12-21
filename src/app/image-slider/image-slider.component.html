@@ -1,0 +1,23 @@
+<div class="deslizador-contenedor">
+    <div class="slide-contenedor">
+        <!-- Flecha izquierda -->
+        <div class="flechaIzquierda" (click)="anterior()">
+            <i class="fa-solid fa-angles-left"></i>
+        </div>
+        <img [src]="obtenerUrlActual" class="s-img" alt="">
+        <div class="flechaDerecha" (click)="siguiente()">
+            <i class="fa-solid fa-angles-right"></i>
+        </div>
+    </div>
+    <div class="puntos-Contenedor">
+        <div *ngFor="let slide of slides; let slideIndex = index" class="punto"
+            (click)="seleccionarSlide(slideIndex)"
+            [ngClass]="{
+                'azul': slideIndex === 0, 
+                'negro': slideIndex === 1, 
+                'rosado': slideIndex === 2, 
+                'punto-seleccionado': indexActual === slideIndex
+            }">
+        </div>
+    </div>
+</div>

@@ -10,8 +10,16 @@
   .sm-menu {
     color: #525252;
   }
+  margin-top: 17px;
+
+  .sm-menu {
+    color: #525252;
+  }
 
   .padre-contenedor-links {
+    li:nth-child(4), li:nth-child(3), li:nth-child(2), li:nth-child(1){
+      display: none;
+    }
     li:nth-child(4), li:nth-child(3), li:nth-child(2), li:nth-child(1){
       display: none;
     }
@@ -51,8 +59,14 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: auto;
-    
+    height: auto;
+  
+    .shein-title{
+      margin-left: 2%;
+      color: #525252;
+      font-size: 29px;
+    }
+  
     .store-link {
       display: flex;
       flex-direction: row;
@@ -65,11 +79,12 @@
       .shein-title {
         margin-right: 20px;
         color: #525252;
-        font-size: 23px;
+        font-size: 20px;
       }
       
       .store-icon {
         font-size: 30px;
+        display: none;
         margin-bottom: 5px;
         margin-left: 10px;
         margin-right: 5px;
@@ -86,6 +101,9 @@
     height: 50px;
     margin-top: 20px;
 
+    .sm-menu {
+      display: none;
+    }
     .sm-menu {
       display: none;
     }
@@ -106,7 +124,7 @@
         }
       }
     }
-
+        
     .store-contenedor {
       height: 100%;
       margin-left: 47px;
@@ -117,6 +135,7 @@
         }
 
         .store-icon {
+          display: block;
           font-size: 30px;
           margin-right: 20px;
           color: #79B4B7;
