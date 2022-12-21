@@ -30,13 +30,19 @@
         }
 
         .estilos-titulo {
+            position: relative;
             font-size: 12px;
             font-weight: 500;
         }
 
         .estilos-titulo-ultimo {
+            position: relative;
             font-size: 14px;
             padding: 0;
+        }
+
+        .dentro-btn, .info-about-us {
+            display: none;
         }
     }
 
@@ -46,7 +52,6 @@
         align-items: center;
         justify-content: center;
         padding: 0;
-        // background-color: black;
 
         .jacket {
             // background-color: red;
@@ -57,6 +62,166 @@
     }
 }
 
-@media screen and (min-width: 800px) {
+@media (min-width: 640px) { 
+    .home-contenedor {
+        flex-direction: row;
+        padding-top: 20px;
 
+        .afuera-btn {
+            display: none;
+        }
+        
+        .contenedor-contenido {
+            padding-left: 30px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+            .outfit-titulo {
+                width: 100%;
+                align-items: left;
+            }
+    
+            .estilos-titulo {
+                width: 100%;
+                align-items: left;
+                font-size: 30px;
+                font-weight: 200;
+            }
+    
+            .estilos-titulo-ultimo {
+                width: 100%;
+                align-items: left;
+                font-size: 35px;
+                bottom: 10px;
+                font-weight: 600;
+            }
+
+            .info-about-us {
+                position: relative;
+                display: block;
+                width: 100%;
+                display: flex;
+                align-items: left;
+                text-align: justify;
+            }
+
+            .dentro-btn {
+                width: 100%;
+                margin-top: 37px;
+                display: flex;
+                flex-direction: row;
+                justify-self: left;
+            }
+            
+        }
+    
+        .carrucel {
+            width: 740px;
+            margin-right: 5px;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .home-contenedor {
+        .contenedor-contenido {
+            .outfit-titulo {
+                font-size: 20px;
+                align-items: left;
+            }
+    
+            .estilos-titulo {
+                width: 100%;
+                align-items: left;
+                font-size: 40px;
+                font-weight: 200;
+            }
+    
+            .estilos-titulo-ultimo {
+                width: 100%;
+                align-items: left;
+                font-size: 45px;
+                bottom: 15px;
+                font-weight: 600;
+            }
+
+            .info-about-us {
+                font-size: 17px;
+                margin-top: 15px;
+                bottom: 10px;
+            }
+
+            .dentro-btn {
+                margin-top: 40px;
+            }
+            
+        }
+    
+        .carrucel {
+            width: 750px;
+            margin-right: 4%;
+        }
+    }
+}
+
+@media (min-width: 1024px) { 
+    .home-contenedor {
+        .contenedor-contenido {
+            margin-left: 43px;
+            width: 90%;
+    
+            .estilos-titulo {
+                font-size: 45px;
+                color: #80C7D9;
+            }
+    
+            .estilos-titulo-ultimo {
+                font-size: 50px;
+                color: #80C7D9;
+                
+            }
+
+            .info-about-us {
+                font-size: 18px;
+                color: #83afba;
+            }
+        }
+    
+        .carrucel {
+            width: 760px;
+            margin-bottom: 15px;
+            margin-right: 5%;
+        }
+    }
+}
+
+
+@media (min-width: 1280px) { 
+    .home-contenedor {
+        .contenedor-contenido {
+            margin-left: 100px;
+            width: 85%;
+    
+            .estilos-titulo {
+                font-size: 45px;
+                color: #80C7D9;
+            }
+    
+            .estilos-titulo-ultimo {
+                font-size: 50px;
+                color: #80C7D9;
+                
+            }
+
+            .info-about-us {
+                font-size: 18px;
+                color: #83afba;
+            }
+        }
+    
+        .carrucel {
+            width: 70%;
+            margin-bottom: 15px;
+            margin-right: 5%;
+        }
+    }
 }
