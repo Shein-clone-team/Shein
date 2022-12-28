@@ -3,8 +3,34 @@
 
     <!-- menu de amburgueza - mostrar cuando es para celular-->
     <div class="sm-menu ml-[10px] mr-[25px]">
-      <i class="fa-solid fa-bars text-[30px]"></i>
+      <i class="fa-solid fa-bars text-[30px]" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"></i>
     </div>
+
+<div class="offcanvas offcanvas-start Padre-contenedor" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+  <div class="offcanvas-header">
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="contenedor-link">
+    <ul class="contenedor-links">
+      <li class="links">
+        <i class="fa-solid fa-house-chimney"></i>
+        <a href="#">HOME</a>
+      </li>
+      <li class="links">
+        <i class="fa-brands fa-shopify"></i>
+        <a href="#">SHOP</a>  
+      </li>
+      <li class="links">
+        <i class="fa-solid fa-address-card"></i>
+        <a href="#">ABOUT US</a>  
+      </li>
+      <li class="links">
+        <i class="fa-solid fa-user"></i>
+        <a href="#">LOGIN</a>  
+      </li>
+    </ul>
+  </div>
+</div>
 
     <div class="store-contenedor">
 
