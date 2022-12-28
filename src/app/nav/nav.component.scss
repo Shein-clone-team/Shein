@@ -20,7 +20,11 @@
     li:nth-child(4), li:nth-child(3), li:nth-child(2), li:nth-child(1){
       display: none;
     }
-    li:nth-child(4), li:nth-child(3), li:nth-child(2), li:nth-child(1){
+
+    li:nth-child(4),
+    li:nth-child(3),
+    li:nth-child(2),
+    li:nth-child(1) {
       display: none;
     }
 
@@ -59,14 +63,16 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    width: auto;
+    
     height: auto;
-  
-    .shein-title{
+
+    .shein-title {
       margin-left: 2%;
       color: #525252;
       font-size: 29px;
     }
-  
+
     .store-link {
       display: flex;
       flex-direction: row;
@@ -75,25 +81,55 @@
       align-items: center;
       text-decoration: none;
       color: black;
-  
+
       .shein-title {
         margin-right: 20px;
         color: #525252;
         font-size: 20px;
       }
-      
+
       .store-icon {
         font-size: 30px;
         display: none;
         margin-bottom: 5px;
         margin-left: 10px;
         margin-right: 5px;
-        color: #79B4B7;
+        color: #79b4b7;
       }
     }
   }
-}
 
+  .Padre-contenedor {
+    .contenedor-link {
+      .contenedor-links {
+        .links {
+
+          a {
+            text-decoration: none;
+            color: #525252;
+            margin-left: 10px;
+          }
+
+        
+
+          margin-bottom: 5%;
+          padding-top: 5%;
+
+      
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+
+  .offcanvas-start.show:not(.hiding),
+  .offcanvas-start.showing {
+    transform: none;
+    width: 60%;
+  }
+}
 
 //vista para desktop
 @media screen and (min-width: 800px) {
@@ -104,13 +140,15 @@
     .sm-menu {
       display: none;
     }
-    .sm-menu {
-      display: none;
-    }
+
 
     .padre-contenedor-links {
+
       // desplegando los links
-      li:nth-child(4), li:nth-child(3), li:nth-child(2), li:nth-child(1){
+      li:nth-child(4),
+      li:nth-child(3),
+      li:nth-child(2),
+      li:nth-child(1) {
         display: block;
       }
 
@@ -138,7 +176,7 @@
           display: block;
           font-size: 30px;
           margin-right: 20px;
-          color: #79B4B7;
+          color: #79b4b7;
         }
       }
     }
