@@ -1,0 +1,32 @@
+.contenedor-shop {
+  display: flex;
+  width: 100%;
+
+  .card-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .añadir-carrito {
+    width: 23%;
+    font-size: 25px;
+  }
+
+  .card-title{
+    display: flexbox;
+
+  }
+
+  .btn-outline-light{
+    display: flex;
+    position: absolute;
+    width: 89%;
+    height: 10%;
+    margin-top: 68%;
+    align-items: center;
+    flex-direction: inherit;
+    border-radius: 3px 1px;
+  }
+}

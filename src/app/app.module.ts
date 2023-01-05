@@ -13,6 +13,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ComponentsModule } from './components/components.module';
 import { ImageSliderComponent } from './image-slider/image-slider.component';
+import { ShopComponent } from './pages/shop/shop.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { ImageSliderComponent } from './image-slider/image-slider.component';
     NavComponent,
     FooterComponent,
     HomeComponent,
-    ImageSliderComponent
+    ImageSliderComponent,
+    ShopComponent
   ],
   imports: [
     BrowserModule,
