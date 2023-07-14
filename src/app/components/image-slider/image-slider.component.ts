@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { ISlide } from '../interfaces/ISlide';
+import { ISlide } from '../../interfaces/ISlide';
 
 @Component({
   selector: 'app-image-slider',
@@ -10,10 +10,10 @@ export class ImageSliderComponent {
   @Input() slides: ISlide[] = [];
 
   indexActual: number = 0;
-  
+
   get obtenerUrlActual():string {
     return this.slides[this.indexActual].url;
-  } 
+  }
 
   siguiente() {
     let isLast = this.indexActual === (this.slides.length-1);

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AuthService } from 'src/app/auth/services/auth.service';
 // import { faUser } from '@fortawesome/free-solid-svg-icons';
 // import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 // import { faStore } from '@fortawesome/free-solid-svg-icons';
@@ -13,4 +14,9 @@ export class NavComponent {
   // carrito = faCartShopping;
   // tienda= faStore;
   // barra = faBars;
+
+
+
+
+  constructor(public authServices: AuthService){}
 }
