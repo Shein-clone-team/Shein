@@ -34,7 +34,7 @@
           </li>
           <li class="links">
             <i class="fa-brands fa-shopify"></i>
-            <span routerLink="/shop">SHOP</span><br/>
+            <span routerLink="/shop">SHOP</span><br />
           </li>
           <li class="links">
             <i class="fa-solid fa-user"></i>
@@ -59,16 +59,36 @@
         <li class="links">
           <a routerLink="shop">SHOP</a>
         </li>
-        <li class="links" >
 
-          <a routerLink="login">LOGIN</a>
-          <i class="fa-solid fa-circle-user"></i>
-        </li>
-        <!-- <li class="links">
-          <a href="#" class="titulos3">
-            <i class="fa-solid fa-user usuario"></i>
-          </a>
-        </li> -->
+        <form class="d-flex contenedor-links" role="search">
+          <li class="nav-item dropdown links">
+            <a
+              class="nav-link dropdown-toggle"
+              data-bs-toggle="dropdown"
+              role="button"
+              aria-expanded="false"
+            >
+              <i class="fa-solid fa-circle-user"></i>
+            </a>
+            <ul class="dropdown-menu">
+
+
+              <li *ngIf="!authServices.user">
+                <a routerLink="login" class="dropdown-item">Iniciar Sesion</a>
+              </li>
+              <li *ngIf="!authServices.user">
+                <a routerLink="registro" class="dropdown-item">Registraste</a>
+              </li>
+              <li>
+                <a routerLink="/" class="dropdown-item">Perfil</a></li>
+              <li>
+                <a class="dropdown-item" routerLink="login" href="/">Cerrar Sesion</a>
+              </li>
+
+            </ul>
+          </li>
+        </form>
+
         <li class="links">
           <i class="fa-solid fa-cart-shopping carrito"></i>
         </li>

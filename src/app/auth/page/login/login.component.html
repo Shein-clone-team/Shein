@@ -1,10 +1,10 @@
 <form (ngSubmit)="sendLogin()" [formGroup]="formLogin">
   <div class="main-container">
-    <div  class="container-login">
+    <div class="container-login">
       <h1>Log in</h1>
-      <br/>
+      <br />
 
-      <div class="mb-3">
+      <div class="mb-3" *ngIf="authServices.Login">
         <input
           type="email"
           class="form-control"
@@ -12,7 +12,7 @@
           id="exampleFormControlInput1"
           placeholder="name@example.com"
         />
-        <br/>
+        <br />
         <input
           type="password"
           id="inputPassword5"
@@ -21,22 +21,18 @@
           placeholder="password"
           aria-labelledby="passwordHelpBlock"
         />
-
-
-      <div class="button" >
-        <button type="button" type="submit" class="btn btn-outline-primary">Acceder</button>
-        <button type="button" class="btn btn-outline-primary">Acceder con Google</button>
-        <br/>
-        <span routerLink="/registro">¿No tienes una Cuenta? Registrate</span>
+        <div class="button">
+          <button type="button" type="submit" class="btn btn-outline-primary">
+            Acceder
+          </button>
+          <br/>
+          <button type="button" class="btn btn-outline-primary">
+            Acceder con Google
+          </button>
+          <br />
+          <span routerLink="/registro">¿No tienes una Cuenta? Registrate</span>
+        </div>
       </div>
-      </div>
-
-
     </div>
   </div>
-
 </form>
-
-
-
-
