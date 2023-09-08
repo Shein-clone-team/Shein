@@ -1,3 +1,4 @@
+import { HomepageComponent } from './pages/homepage/homepage.component';
 import { AuthRegisterComponent } from './auth/page/Registro/auth-register/auth-register.component';
 import { LoginComponent } from './auth/page/login/login.component';
 import { NgModule, Component } from '@angular/core';
@@ -21,6 +22,10 @@ const routes: Routes = [
   {
     path: 'registro',
     component: AuthRegisterComponent
+  },
+  {
+    path: 'homepage',
+    component: HomepageComponent
   }
 ];
 

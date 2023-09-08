@@ -4,6 +4,7 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavComponent } from './components/nav/nav.component';
+import { FIREBASE_OPTIONS } from '@angular/fire/compat';
 
 //componentes de angular materia
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -17,6 +18,8 @@ import { ShopComponent } from './pages/shop/shop.component';
 import { LoginComponent } from './auth/page/login/login.component';
 import { FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { AuthRegisterComponent } from './auth/page/Registro/auth-register/auth-register.component';
+import { environment } from 'src/environments/environment';
+import { HomepageComponent } from './pages/homepage/homepage.component';
 
 
 @NgModule({
@@ -28,7 +31,8 @@ import { AuthRegisterComponent } from './auth/page/Registro/auth-register/auth-r
     ImageSliderComponent,
     ShopComponent,
     LoginComponent,
-    AuthRegisterComponent
+    AuthRegisterComponent,
+    HomepageComponent,
   ],
   imports: [
     BrowserModule,
@@ -41,7 +45,7 @@ import { AuthRegisterComponent } from './auth/page/Registro/auth-register/auth-r
     ReactiveFormsModule,
     HttpClientModule,
   ],
-  providers: [],
+  providers: [ { provide: FIREBASE_OPTIONS, useValue: environment.firebaseConfig }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

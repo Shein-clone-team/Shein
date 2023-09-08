@@ -3,6 +3,7 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { CookieService } from 'ngx-cookie-service';
 import { AuthService } from 'src/app/auth/services/auth.service';
+import { GoogleapiService } from 'src/app/auth/services/googleapi.service';
 @Component({
   selector: 'app-nav',
   templateUrl: './nav.component.html',
@@ -22,6 +23,7 @@ export class NavComponent implements OnInit {
   constructor(
     public authServices: AuthService,
     private cookie: CookieService,
+    private GoogleApi: GoogleapiService,
     private router: Router
   ) {}
 
@@ -59,5 +61,10 @@ export class NavComponent implements OnInit {
           console.log('⚠Ocurrio Error con tu email o password');
         }
       );
+  }
+
+
+  logout() {
+    this.GoogleApi.logout();
   }
 }

@@ -28,14 +28,14 @@
       </div>
       <div class="contenedor-link">
         <ul class="contenedor-links">
-          <li class="links">
+          <!-- <li class="links">
             <i class="fa-solid fa-house-chimney"></i>
             <a href="/home">HOME</a>
-          </li>
-          <li class="links">
+          </li> -->
+          <!-- <li class="links">
             <i class="fa-brands fa-shopify"></i>
             <span routerLink="/shop">SHOP</span><br />
-          </li>
+          </li> -->
           <li class="links">
             <i class="fa-solid fa-user"></i>
             <a href="/login">LOGIN</a>
@@ -53,12 +53,12 @@
 
     <div class="padre-contenedor-links">
       <ul class="contenedor-links">
-        <li class="links">
+        <!-- <li class="links">
           <a href="/home">HOME</a>
-        </li>
-        <li class="links">
+        </li> -->
+        <!-- <li class="links">
           <a routerLink="shop">SHOP</a>
-        </li>
+        </li> -->
 
         <form class="d-flex contenedor-links" role="search">
           <li class="nav-item dropdown links">
@@ -68,7 +68,7 @@
               role="button"
               aria-expanded="false"
             >
-              <i class="fa-solid fa-circle-user"></i>
+            <i class="fa-sharp fa-light fa-user" style="color: #000000;"></i>
             </a>
             <ul class="dropdown-menu">
 
@@ -82,16 +82,16 @@
               <li>
                 <a routerLink="/" class="dropdown-item">Perfil</a></li>
               <li>
-                <a class="dropdown-item" routerLink="login" href="/">Cerrar Sesion</a>
+                <a (click)="logout()"  class="dropdown-item" routerLink="login" href="/">Cerrar Sesion</a>
               </li>
 
             </ul>
           </li>
         </form>
 
-        <li class="links">
+        <!-- <li class="links">
           <i class="fa-solid fa-cart-shopping carrito"></i>
-        </li>
+        </li> -->
       </ul>
     </div>
   </mat-toolbar>

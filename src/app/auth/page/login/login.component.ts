@@ -46,6 +46,9 @@ export class LoginComponent implements OnInit {
         Validators.min(12),
       ]),
     });
+
+    this.logouT();
+
   }
 
   sendLogin(): void {
@@ -56,10 +59,12 @@ export class LoginComponent implements OnInit {
       .subscribe(
         (responseOk) => {
           console.log('Seccion iniciada correcta', responseOk);
-          const { data } = responseOk;
-          this.authServices.user = data;
-          console.log(data);
-          this.router.navigate(['/', 'home']);
+          const { tokenSession ,data } = responseOk;
+          this.authServices.user = data
+          localStorage.setItem ('token', tokenSession)
+          this.cookie.set('token', tokenSession, 1, '/')
+
+          this.router.navigate(['/', 'homepage']);
         },
         (err) => {
           this.errorSession = true;
@@ -68,7 +73,17 @@ export class LoginComponent implements OnInit {
       );
   }
 
-  logout() {
+
+
+  googleToken() {
+    const { email, password } = this.usuario;
+    this.GoogleApi.loginWithGoogle(email, password).then((res) => {
+      console.log('se registro:', res);
+      this.router.navigate(['/homepage']);
+    });
+  }
+
+  logouT() {
     this.GoogleApi.logout();
   }
 }

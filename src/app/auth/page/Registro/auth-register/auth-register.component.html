@@ -1,12 +1,12 @@
-<form>
+<form (ngSubmit)="registerUser()" [formGroup]="formLogin">
   <div class="main-container">
     <div class="container-login">
       <h1>Registro</h1>
       <br />
 
-      <div class="mb-3">
+      <div class="mb-3" *ngIf="authServices.register">
         <input
-          type="email"
+          type="name"
           class="form-control"
           formControlName="email"
           id="exampleFormControlInput1"
@@ -14,7 +14,7 @@
         />
         <br />
         <input
-          type="email"
+          type="Last Name"
           class="form-control"
           formControlName="email"
           id="exampleFormControlInput1"
@@ -39,7 +39,7 @@
         />
 
         <div class="button">
-          <button type="button" type="submit" class="btn btn-outline-primary">
+          <button (click)="registerUser()" type="button" type="submit" class="btn btn-outline-primary">
             Login
           </button>
           <br />
