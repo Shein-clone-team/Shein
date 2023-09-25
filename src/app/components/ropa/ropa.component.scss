@@ -2,31 +2,59 @@
   display: flex;
   width: 100%;
 
-  .card-body {
+  .contenedor-contenido {
+    width: 78pc;
     display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-    flex-direction: column;
-  }
-
-  .añadir-carrito {
-    width: 23%;
-    font-size: 25px;
-  }
-
-  .card-title{
-    display: flexbox;
-
-  }
-
-  .btn-outline-light{
-    display: flex;
-    position: absolute;
-    width: 89%;
-    height: 10%;
-    margin-top: 68%;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
-    flex-direction: inherit;
-    border-radius: 3px 1px;
+    height: 431px;
+    background-color: #ffffff;
   }
+
+  .img {
+    width: 436px;
+    padding: 65px;
+  }
+
+  .contenerdor-text {
+    width: 190px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .button {
+    width: 115px;
+    height: 42px;
+    border: 1px solid rgb(10, 10, 10);
+    margin-top: 27px;
+    background-color: #f0f8ff17;
+    cursor: pointer;
+    ;
+  }
+
+  .text-princ {
+    width: 110%;
+    font-size: 18px;
+    color: brown;
+    margin-bottom: 3px;
+    font-family: inherit;
+  }
+
+  .text-seng {
+    color: #000000;
+    font-size: 17px;
+    margin-bottom: 2px;
+    font-family: inherit;
+  }
+}
+
+.contenedor-ropa {
+  display: flex;
+  margin-left: 5p;
+  align-items: center;
+  padding: 25px 0px 0px 0px;
+  justify-content: space-between;
 }

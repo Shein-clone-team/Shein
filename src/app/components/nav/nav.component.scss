@@ -29,15 +29,16 @@
     }
 
     .contenedor-links {
-      list-style: none;
-      display: flex;
+      display: grid;
       flex-direction: row;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
       width: auto;
       list-style: none;
-      margin-right: 6px;
+      margin-right: 5px;
       margin-bottom: 0;
+      align-content: space-around;
+      justify-items: center;
 
       .links {
         cursor: pointer;
@@ -58,6 +59,19 @@
       .carrito {
         color: #525252;
         font-size: 30px;
+      }
+
+      .fa-heart{
+        font-size: 27px;
+        width: 76px;
+      }
+      .fa-cart-shopping{
+        font-size: 25px;
+        width: 26px;
+      }
+      .fa-magnifying-glass{
+        font-size: 25px;
+        width: 68px;
       }
     }
   }

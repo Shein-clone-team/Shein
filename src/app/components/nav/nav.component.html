@@ -61,6 +61,9 @@
         </li> -->
 
         <form class="d-flex contenedor-links" role="search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <i class="fa-solid fa-cart-shopping"></i>
+          <i class="fa-regular fa-heart"></i>
           <li class="nav-item dropdown links">
             <a
               class="nav-link dropdown-toggle"
@@ -71,8 +74,6 @@
             <i class="fa-sharp fa-light fa-user" style="color: #000000;"></i>
             </a>
             <ul class="dropdown-menu">
-
-
               <li *ngIf="!authServices.user">
                 <a routerLink="login" class="dropdown-item">Iniciar Sesion</a>
               </li>
@@ -84,7 +85,6 @@
               <li>
                 <a (click)="logout()"  class="dropdown-item" routerLink="login" href="/">Cerrar Sesion</a>
               </li>
-
             </ul>
           </li>
         </form>

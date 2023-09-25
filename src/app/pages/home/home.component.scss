@@ -11,10 +11,10 @@
     margin-top: 10px;
     padding-bottom: 30px;
     overflow: hidden;
-    
+
     .contenedor-contenido {
         width: 100%;
-        padding: 25px 0px 0px 0px; 
+        padding: 25px 0px 0px 0px;
         border-radius: 20px;
         display: flex;
         flex-direction: column;
@@ -62,7 +62,7 @@
     }
 }
 
-@media (min-width: 640px) { 
+@media (min-width: 640px) {
     .home-contenedor {
         flex-direction: row;
         padding-top: 20px;
@@ -70,7 +70,7 @@
         .afuera-btn {
             display: none;
         }
-        
+
         .contenedor-contenido {
             padding-left: 30px;
             font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -79,14 +79,14 @@
                 width: 100%;
                 align-items: left;
             }
-    
+
             .estilos-titulo {
                 width: 100%;
                 align-items: left;
                 font-size: 30px;
                 font-weight: 200;
             }
-    
+
             .estilos-titulo-ultimo {
                 width: 100%;
                 align-items: left;
@@ -111,9 +111,9 @@
                 flex-direction: row;
                 justify-self: left;
             }
-            
+
         }
-    
+
         .carrucel {
             width: 740px;
             margin-right: 5px;
@@ -128,14 +128,14 @@
                 font-size: 20px;
                 align-items: left;
             }
-    
+
             .estilos-titulo {
                 width: 100%;
                 align-items: left;
                 font-size: 40px;
                 font-weight: 200;
             }
-    
+
             .estilos-titulo-ultimo {
                 width: 100%;
                 align-items: left;
@@ -153,9 +153,9 @@
             .dentro-btn {
                 margin-top: 40px;
             }
-            
+
         }
-    
+
         .carrucel {
             width: 750px;
             margin-right: 4%;
@@ -163,21 +163,21 @@
     }
 }
 
-@media (min-width: 1024px) { 
+@media (min-width: 1024px) {
     .home-contenedor {
         .contenedor-contenido {
             margin-left: 43px;
             width: 90%;
-    
+
             .estilos-titulo {
                 font-size: 45px;
                 color: #80C7D9;
             }
-    
+
             .estilos-titulo-ultimo {
                 font-size: 50px;
                 color: #80C7D9;
-                
+
             }
 
             .info-about-us {
@@ -185,7 +185,7 @@
                 color: #83afba;
             }
         }
-    
+
         .carrucel {
             width: 760px;
             margin-bottom: 15px;
@@ -195,21 +195,21 @@
 }
 
 
-@media (min-width: 1280px) { 
+@media (min-width: 1280px) {
     .home-contenedor {
         .contenedor-contenido {
             margin-left: 100px;
             width: 85%;
-    
+
             .estilos-titulo {
                 font-size: 45px;
                 color: #80C7D9;
             }
-    
+
             .estilos-titulo-ultimo {
                 font-size: 50px;
                 color: #80C7D9;
-                
+
             }
 
             .info-about-us {
@@ -217,7 +217,7 @@
                 color: #83afba;
             }
         }
-    
+
         .carrucel {
             width: 70%;
             margin-bottom: 15px;
